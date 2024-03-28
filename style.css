@@ -87,6 +87,7 @@ div.title{
     text-align: justify;
 }
 button.xzim{
+    z-index: 4;
     position: absolute;
     left: 100%;
     background-color: rgba(0, 0, 0, 0);
@@ -100,7 +101,7 @@ button.xzim{
     -2px 2px 3px white;
 }
 .aut{
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: rgba(0, 0, 0, 0.295);
     margin-top: 4px;
     padding-left: 3px;
     padding-top: 1px;
