@@ -221,7 +221,7 @@ function xsit(){
 }
 
 function p(){
-    document.getElementById('pt').style.transform="translate(-50%, -50%) scale(1)"
+    document.getElementById('pfost').style.transform="translate(-50%, -50%) scale(1)"
     document.getElementById('tp').style.filter="blur(3px)"
     document.getElementById('tp').style.opacity="0.8"
     document.getElementById('dc').style.display="block"
@@ -229,7 +229,7 @@ function p(){
 
 }
 function xpt(){
-    document.getElementById('pt').style.transform="translate(-50%, -50%) scale(0)"
+    document.getElementById('pfost').style.transform="translate(-50%, -50%) scale(0)"
     document.getElementById('tp').style.filter=""
     document.getElementById('tp').style.opacity="1"
     document.getElementById('dc').style.display="none"
