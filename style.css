@@ -49,9 +49,9 @@ main{
     border-radius: 30px;
     transition: .1s;
     display: none;
-    margin-left: 50%;
-    margin-top: -10px;
-    transform: translateX(-50%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .ryp img{
     width: 150px;
