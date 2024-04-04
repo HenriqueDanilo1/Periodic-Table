@@ -1,19 +1,1 @@
 ¯\_(ツ)_/¯
-            <div class="mt inf" id="yt">
-                <p class="inf-title">ítrio</p>
-                <button class="xzim" onclick="xtet()">X</button>
-                <p>O ítrio é muito utilizado no campo dos eletrônicos por causa de suas próprias luminescente como por exemplo em fazers, também podem ser usados como super condutores oque permitiu o avanço na tecnologia de levitação magnética. O ítrio foi descoberto em 1794 e isolado em 1828 por Friedrich mohler como um extrato impuro de ítrio com redução de cloreto de anidro (YCI3)</p>
-                <p class="aut">Feito por: Natã Souza</p>
-            </div>
-            <div class="sm inf" id="att">
-                <p class="inf-title">astalo</p>
-                <button class="xzim" onclick="xtet()">X</button>
-                <p>O astalo pode ser utilizado no tratamento do hipertireoidismo devido ao fato de emitir particulas alfa. sua massa atômica varia entre 200 e 219 tem um tempo de vida curto devido ao decaimento fazendo ele ser o elemento mais raro da tabela. quando foi descoberto os cientistas não haviam visto ele no início no experimento mas o acharam com um truque isso aconteceu em 1947, e propriseram o nome astalo que em grego significa instável.</p>
-                <p class="aut">Feito por: Natã Souza</p>
-            </div>
-            <div class="sm inf" id="tet">
-                <p class="inf-title">telúrio</p>
-                <button class="xzim" onclick="xtet()">X</button>
-                <p>O telúrio, elemento químico de número atômico 52, é um metalóide com características de metais e não metais. Possui coloração prateada brilhante e é raro na crosta terrestre, associado a minerais de metais como cobre, ouro e prata. Descoberto em 1782 por Franz-Joseph Müller von Reichenstein, é obtido como subproduto do processamento de minérios ou recuperação de subprodutos de refinarias de petróleo. Tem aplicações em ligas metálicas para eletrônicos e detecção de raios-X, vidros de baixo ponto de fusão e medicamentos. Embora sua forma elementar não seja tóxica, compostos de telúrio podem causar irritações. Sua baixa abundância limita sua exposição humana.Exposição prolongada a compostos de telúrio pode causar irritação nos olhos, pele e sistema respiratório.</p>
-                <p class="aut">Feito por: Andressa Ferreira</p>
-            </div>
