@@ -38,6 +38,26 @@ body{
 main{
     transition: .2s;
 }
+/*informaçõs*/
+.i-i{
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border: #000 solid 2px;
+    border-radius: 100%;
+    cursor: default;
+    bottom: 2px;
+    right: 3px;
+}
+p.inff{
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 1000;
+    font-size: 12px;
+}
 /*alert*/
 .ryp{
     width: 300px;
