@@ -1,1 +1,670 @@
 ¯\_(ツ)_/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+    <link rel="stylesheet" href="style.css">
+    <script debugger>
+   function batata(){ 
+    var n = Number(document.querySelector('#n').value)
+    if (n > 1){
+    var chn = 3*n-3
+    var chn2 = chn+1
+    var chn3 = chn+2
+    document.queryselector('#ans').innerHTML='Voce irá pesquisar sobre os elementos ' + chn + ', ' + chn2 + ', ' + chn3 + '.'
+    } 
+    if (n == 1){
+    var chn = n
+    var chn2 = chn+1
+    var chn3 = chn+2
+    document.queryselector('#ans').innerHTML='Voce irá pesquisar sobre os elementos ' + chn + ', ' + chn2 + ', ' + chn3 + '.'
+    }
+   }
+  </script>
+</head>
+</head>
+<body>
+    <table>
+        <h1>Lista de alunos</h1>
+        <tr>
+            <th>NOME</th>
+            <th>NUMERO DE CHAMADA</th>
+        </tr>
+        <tr>
+            <td>ÁBNER</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>ALEF</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>ANA CAROLINA</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>ANA CLARA</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>ANDRESSA</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>ARTHUR</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>BRUNO</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>CHRISTIAN</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>DANIEL</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>DANILO</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>EDUARDA</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>EDUARDO SOARES</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>EDUARDO SOL</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>FERNANDA</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>GABRIEL</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>GIOVANNA</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>GUSTAVO</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>ISABELLA</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>IZABELLY</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>JEANNE</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>JEMILLY</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>JOÃO</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>KAUAN</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>LEONARD0</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>LUCAS ALMEIDA</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>LUCAS NASCIMENTO</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>LUCAS NOLASCO</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>LUIZA</td>
+            <td>28</td>
+        </tr>
+        <tr>
+            <td>MARIA VITÓRIA</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>MATHEUS</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>NATÃ</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <td>PABLO</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>PEDRO</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>RAFAEL</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>RICARDO</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>SHINEIDER</td>
+            <td>36</td>
+        </tr>
+        <tr>
+            <td>VITOR</td>
+            <td>37</td>
+        </tr>
+        </table>
+<body>
+  <form action="/">
+    <label for="n"></label>
+    <input type="number" id="n">
+    <input type="submit" onclick="batata()">
+  </form>
+  <p id="ans">Aqui aparecerá os elementos qur voc pesquisará</p>
+<table>
+    <tr>
+      <th>Número</th>
+      <th>Elemento</th>
+  </tr>
+  <tr>
+    <th>Hidrogênio</th>
+    <th>1</th>
+</tr>
+<tr>
+    <th>Hélio</th>
+    <th>2</th>
+</tr>
+<tr>
+    <th>Lítio</th>
+    <th>3</th>
+</tr>
+<tr>
+    <th>Berílio</th>
+    <th>4</th>
+</tr>
+<tr>
+    <th>Boro</th>
+    <th>5</th>
+</tr>
+<tr>
+    <th>Carbono</th>
+    <th>6</th>
+</tr>
+<tr>
+    <th>Nitrogênio</th>
+    <th>7</th>
+</tr>
+<tr>
+    <th>Oxigênio</th>
+    <th>8</th>
+</tr>
+<tr>
+    <th>Flúor</th>
+    <th>9</th>
+</tr>
+<tr>
+    <th>Neônio</th>
+    <th>10</th>
+</tr>
+<tr>
+    <th>Sódio</th>
+    <th>11</th>
+</tr>
+<tr>
+    <th>Magnésio</th>
+    <th>12</th>
+</tr>
+<tr>
+    <th>Alumínio</th>
+    <th>13</th>
+</tr>
+<tr>
+    <th>Silício</th>
+    <th>14</th>
+</tr>
+<tr>
+    <th>Fósforo</th>
+    <th>15</th>
+</tr>
+<tr>
+    <th>Enxofre</th>
+    <th>16</th>
+</tr>
+<tr>
+    <th>Cloro</th>
+    <th>17</th>
+</tr>
+<tr>
+    <th>Argônio</th>
+    <th>18</th>
+</tr>
+<tr>
+    <th>Potássio</th>
+    <th>19</th>
+</tr>
+<tr>
+    <th>Cálcio</th>
+    <th>20</th>
+</tr>
+<tr>
+    <th>Escândio</th>
+    <th>21</th>
+</tr>
+<tr>
+    <th>Titânio</th>
+    <th>22</th>
+</tr>
+<tr>
+    <th>Vanádio</th>
+    <th>23</th>
+</tr>
+<tr>
+    <th>Cromo</th>
+    <th>24</th>
+</tr>
+<tr>
+    <th>Manganês</th>
+    <th>25</th>
+</tr>
+<tr>
+    <th>Ferro</th>
+    <th>26</th>
+</tr>
+<tr>
+    <th>Cobalto</th>
+    <th>27</th>
+</tr>
+<tr>
+    <th>Níquel</th>
+    <th>28</th>
+</tr>
+<tr>
+    <th>Cobre</th>
+    <th>29</th>
+</tr>
+<tr>
+    <th>Zinco</th>
+    <th>30</th>
+</tr>
+<tr>
+    <th>Gálio</th>
+    <th>31</th>
+</tr>
+<tr>
+    <th>Germânio</th>
+    <th>32</th>
+</tr>
+<tr>
+    <th>Arsênio</th>
+    <th>33</th>
+</tr>
+<tr>
+    <th>Selênio</th>
+    <th>34</th>
+</tr>
+<tr>
+    <th>Bromo</th>
+    <th>35</th>
+</tr>
+<tr>
+    <th>Criptônio</th>
+    <th>36</th>
+</tr>
+<tr>
+    <th>Rubídio</th>
+    <th>37</th>
+</tr>
+<tr>
+    <th>Estrôncio</th>
+    <th>38</th>
+</tr>
+<tr>
+    <th>Ítrio</th>
+    <th>39</th>
+</tr>
+<tr>
+    <th>Zircônio</th>
+    <th>40</th>
+</tr>
+<tr>
+    <th>Nióbio</th>
+    <th>41</th>
+</tr>
+<tr>
+    <th>Molibdênio</th>
+    <th>42</th>
+</tr>
+<tr>
+    <th>Tecnécio</th>
+    <th>43</th>
+</tr>
+<tr>
+    <th>Rutênio</th>
+    <th>44</th>
+</tr>
+<tr>
+    <th>Ródio</th>
+    <th>45</th>
+</tr>
+<tr>
+    <th>Paládio</th>
+    <th>46</th>
+</tr>
+<tr>
+    <th>Prata</th>
+    <th>47</th>
+</tr>
+<tr>
+    <th>Cádmio</th>
+    <th>48</th>
+</tr>
+<tr>
+    <th>Índio</th>
+    <th>49</th>
+</tr>
+<tr>
+    <th>Estanho</th>
+    <th>50</th>
+</tr>
+<tr>
+    <th>Antimônio</th>
+    <th>51</th>
+</tr>
+<tr>
+    <th>Telúrio</th>
+    <th>52</th>
+</tr>
+<tr>
+    <th>Iodo</th>
+    <th>53</th>
+</tr>
+<tr>
+    <th>Xenônio</th>
+    <th>54</th>
+</tr>
+<tr>
+    <th>Césio</th>
+    <th>55</th>
+</tr>
+<tr>
+    <th>Bário</th>
+    <th>56</th>
+</tr>
+<tr>
+    <th>Lantânio</th>
+    <th>57</th>
+</tr>
+<tr>
+    <th>Cério</th>
+    <th>58</th>
+</tr>
+<tr>
+    <th>Praseodímio</th>
+    <th>59</th>
+</tr>
+<tr>
+    <th>Neodímio</th>
+    <th>60</th>
+</tr>
+<tr>
+    <th>Promécio</th>
+    <th>61</th>
+</tr>
+<tr>
+    <th>Samário</th>
+    <th>62</th>
+</tr>
+<tr>
+    <th>Európio</th>
+    <th>63</th>
+</tr>
+<tr>
+    <th>Gadolínio</th>
+    <th>64</th>
+</tr>
+<tr>
+    <th>Térbio</th>
+    <th>65</th>
+</tr>
+<tr>
+    <th>Disprósio</th>
+    <th>66</th>
+</tr>
+<tr>
+    <th>Hólmio</th>
+    <th>67</th>
+</tr>
+<tr>
+    <th>Érbio</th>
+    <th>68</th>
+</tr>
+<tr>
+    <th>Túlio</th>
+    <th>69</th>
+</tr>
+<tr>
+    <th>Itérbio</th>
+    <th>70</th>
+</tr>
+<tr>
+    <th>Lutécio</th>
+    <th>71</th>
+</tr>
+<tr>
+    <th>Háfnio</th>
+    <th>72</th>
+</tr>
+<tr>
+    <th>Tântalo</th>
+    <th>73</th>
+</tr>
+<tr>
+    <th>Tungstênio</th>
+    <th>74</th>
+</tr>
+<tr>
+    <th>Rênio</th>
+    <th>75</th>
+</tr>
+<tr>
+    <th>Ósmio</th>
+    <th>76</th>
+</tr>
+<tr>
+    <th>Irídio</th>
+    <th>77</th>
+</tr>
+<tr>
+    <th>Platina</th>
+    <th>78</th>
+</tr>
+<tr>
+    <th>Ouro</th>
+    <th>79</th>
+</tr>
+<tr>
+    <th>Mercúrio</th>
+    <th>80</th>
+</tr>
+<tr>
+    <th>Tálio</th>
+    <th>81</th>
+</tr>
+<tr>
+    <th>Chumbo</th>
+    <th>82</th>
+</tr>
+<tr>
+    <th>Bismuto</th>
+    <th>83</th>
+</tr>
+<tr>
+    <th>Polônio</th>
+    <th>84</th>
+</tr>
+<tr>
+    <th>Astato</th>
+    <th>85</th>
+</tr>
+<tr>
+    <th>Radônio</th>
+    <th>86</th>
+</tr>
+<tr>
+    <th>Frâncio</th>
+    <th>87</th>
+</tr>
+<tr>
+    <th>Rádio</th>
+    <th>88</th>
+</tr>
+<tr>
+    <th>Actínio</th>
+    <th>89</th>
+</tr>
+<tr>
+    <th>Tório</th>
+    <th>90</th>
+</tr>
+<tr>
+    <th>Protactínio</th>
+    <th>91</th>
+</tr>
+<tr>
+    <th>Urânio</th>
+    <th>92</th>
+</tr>
+<tr>
+    <th>Neptúnio</th>
+    <th>93</th>
+</tr>
+<tr>
+    <th>Plutônio</th>
+    <th>94</th>
+</tr>
+<tr>
+    <th>Amerício</th>
+    <th>95</th>
+</tr>
+<tr>
+    <th>Cúrio</th>
+    <th>96</th>
+</tr>
+<tr>
+    <th>Berquélio</th>
+    <th>97</th>
+</tr>
+<tr>
+    <th>Califórnio</th>
+    <th>98</th>
+</tr>
+<tr>
+    <th>Einstênio</th>
+    <th>99</th>
+</tr>
+<tr>
+    <th>Férmio</th>
+    <th>100</th>
+</tr>
+<tr>
+    <th>Mendelévio</th>
+    <th>101</th>
+</tr>
+<tr>
+    <th>Nobélio</th>
+    <th>102</th>
+</tr>
+<tr>
+    <th>Laurêncio</th>
+    <th>103</th>
+</tr>
+<tr>
+    <th>Rutherfórdio</th>
+    <th>104</th>
+</tr>
+<tr>
+    <th>Dúbnio</th>
+    <th>105</th>
+</tr>
+<tr>
+    <th>Seabórgio</th>
+    <th>106</th>
+</tr>
+<tr>
+    <th>Bohrío</th>
+    <th>107</th>
+</tr>
+<tr>
+    <th>Hássio</th>
+    <th>108</th>
+</tr>
+<tr>
+    <th>Méitnerio</th>
+    <th>109</th>
+</tr>
+<tr>
+    <th>Darmstádio</th>
+    <th>110</th>
+</tr>
+<tr>
+    <th>Roentgênio</th>
+    <th>111</th>
+</tr>
+<tr>
+    <th>Copernício</th>
+    <th>112</th>
+</tr>
+<tr>
+    <th>Nihônio</th>
+    <th>113</th>
+</tr>
+<tr>
+    <th>Fleróvio</th>
+    <th>114</th>
+</tr>
+<tr>
+    <th>Moscóvio</th>
+    <th>115</th>
+</tr>
+<tr>
+    <th>Livermório</th>
+    <th>116</th>
+</tr>
+<tr>
+    <th>Tennesino</th>
+    <th>117</th>
+</tr>
+<tr>
+    <th>Oganessônio</th>
+    <th>118</th>
+</tr>
+</table>
+    </body>
+</html>
