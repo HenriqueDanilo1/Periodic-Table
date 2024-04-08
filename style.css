@@ -29,8 +29,8 @@
 
 /*3d*/
 model-viewer{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -40,7 +40,7 @@ model-viewer{
     position: relative;
     width: 260px;
     height: 260px;
-    background-color: rgb(31, 31, 31);
+    background-color: rgba(31, 31, 31, 0);
     border-radius: 30px;
     left: 50%;
     transform: translateX(-50%);
