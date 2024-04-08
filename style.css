@@ -45,6 +45,10 @@ model-viewer{
     left: 50%;
     transform: translateX(-50%);
 }
+p.model{
+    margin-bottom: 3px;
+    font-size: 10px;
+}
 /*general*/
 *{
     margin: 0;
