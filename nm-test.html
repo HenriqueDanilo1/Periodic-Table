@@ -15,15 +15,30 @@
         }
     </script>
     <style>
-        table{margin-bottom: 15px}
+        table{
+            margin-bottom: 15px;
+            border: 3px solid #002b5d;
+            border-radius: 15px;
+            background-color: #f1f5f3;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .input-child{
+            padding: 4px;
+        }
         .input{
+            margin-bottom: 15px;
             display: inline-block;
             border: 3px solid #002b5d;
             border-radius: 15px;
             background-color: #f1f5f3;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
         #n{
-            width: 33px;
+            width: 35px;
         }
         .eli{
             margin-bottom: 10px;
@@ -66,8 +81,7 @@
     </style>
 </head>
 <body>
-  <table>
-    <h1>Lista de alunos</h1>
+<table>
     <tr>
         <th>NOME</th>
         <th>NUMERO DE CHAMADA</th>
@@ -222,18 +236,18 @@
     </tr>
 </table>
 <div class="input">
-    <table>
+    <div class="input-child">
         <label for="n" class="eli">NUMERO DE CHAMADA</label><br><br>
-        <input type="number" id="n" maxlength="2" size="2" placeholder="000">
+        <input type="number" id="n" placeholder="00" onkeypress="if (this.value.length==2){return false}">
         <input type="submit" onclick="batata()">
-        <p id="ans">Aqui aparecerá os elementos qur voc pesquisará</p>
-    </table>
+        <p id="ans">Aqui aparecerá os elementos que você irá pesquisar! </p>
+    </div>
 </div>
 <div class="ele">
     <table>
         <tr>
-            <th>Número</th>
-            <th>Elemento</th>
+            <th>NÚMERO</th>
+            <th>ELEMENTO</th>
         </tr>
         <tr>
             <td>Hidrogênio</td>
