@@ -62,6 +62,7 @@ main{
 }
 /*informaçõs*/
 .i-i{
+    z-index: 4;
     position: fixed;
     width: 10px;
     height: 10px;
@@ -102,16 +103,20 @@ p.inff{
 .ryp img{
     width: 150px;
     position: relative;
-    top: 22px;
+    top: 18px;
     left: 50%;
     transform: translateX(-50%);
 }
 .ryp p{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
     font-family: "Roboto mono", sans-serif;
     font-weight: 700;
     text-align: center;
     margin-top: 10px;
+    width: 95%;
 }
 .ryp button{
     padding: 10px;
@@ -123,7 +128,7 @@ p.inff{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 35px;
+    margin-top: 10px;
     height: 49px;
     transition: .1s linear;
     z-index: 2;
