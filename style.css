@@ -85,67 +85,6 @@ p.inff{
     font-weight: 900;
     font-size: 17px;
 }
-/*alert*/
-.ryp{
-    width: 300px;
-    height: 300px;
-    position: fixed;
-    z-index: 4;
-    background-color: #000;
-    border: 5px solid red;
-    border-radius: 30px;
-    transition: .1s;
-    display: none;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-.ryp img{
-    width: 150px;
-    position: relative;
-    top: 18px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.ryp p{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-family: "Roboto mono", sans-serif;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 10px;
-    width: 95%;
-}
-.ryp button{
-    padding: 10px;
-    border: 5px solid red;
-    border-radius: 50px;
-    color: white;
-    font-weight: 900;
-    background: linear-gradient(rgb(85, 2, 2), #000);
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-    height: 49px;
-    transition: .1s linear;
-    z-index: 2;
-}
-.ryp button:hover{
-    background: linear-gradient(rgb(85, 2, 2) 40%,rgb(85, 2, 2) 100%);
-    transform: translateX(-50%)scale(1.05);
-}
-.black{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.836);
-    border: none;
-    display: none;
-    z-index: 3;
-}
 /*periodic table*/
 .pertab{
     transform: scale(0.95);
@@ -367,14 +306,7 @@ background-color: #DCADD6;
         margin-left: 20px;
         margin-right: 20px;
     }
-    main{
-        opacity: 0.3;
-        pointer-events: none;
-    }
     .pertab{
         margin-left: -50px;
-    }
-    .ryp{
-        display: block;
     }
 }
