@@ -27,6 +27,17 @@
     100% {border: 4px solid #FF0100;}
 }
 
+/*general*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(31, 31, 31);
+}
+main{
+    transition: .2s;
+}
 /*3d*/
 model-viewer{
     width: 500px;
@@ -48,42 +59,6 @@ model-viewer{
 p.model{
     margin-bottom: 3px;
     font-size: 10px;
-}
-/*general*/
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: rgb(31, 31, 31);
-}
-main{
-    transition: .2s;
-}
-/*informaçõs*/
-.i-i{
-    z-index: 4;
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    border: #000 solid 2px;
-    border-radius: 100%;
-    cursor: default;
-    bottom: 2px;
-    right: 3px;
-}
-p.inff{
-    color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 1000;
-    font-size: 12px;
-}
-.subtitle{
-    font-weight: 900;
-    font-size: 17px;
 }
 /*periodic table*/
 .pertab{
@@ -113,9 +88,11 @@ div.title{
 }
 /*tabel*/
 .container{
+    display: table-cell;
     text-align: center;
 }
 .container-2{
+    display: inline-block;
     text-align: center;
     margin-top: 10px;
 }
@@ -174,6 +151,11 @@ button.xzim{
 }
 #tp{
     transition: .2s;
+}
+.subtitle{
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /*label*/
 .caption{
@@ -299,6 +281,16 @@ background-color: #DCADD6;
 .subn{
     font-family: "Signika Negative", sans-serif;
     font-size: 12px;
+}
+/*container line*/
+.container-line{
+    position: absolute;
+    top: 562px;
+    left: 214px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    width: 42px;
+    height: 95px;
 }
 /*media*/
 @media screen and (max-width: 1545px) {
