@@ -124,6 +124,7 @@ div.title{
     text-align: justify;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 3;
 }
 button.xzim{
     z-index: 4;
@@ -156,6 +157,16 @@ button.xzim{
     font-weight: 600;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.close-this-shit{
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
 }
 /*label*/
 .caption{
