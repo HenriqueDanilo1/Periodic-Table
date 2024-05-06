@@ -297,10 +297,10 @@ background-color: #DCADD6;
 .container-line{
     position: absolute;
     top: 562px;
-    left: 214px;
+    left: 213px;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
-    width: 42px;
+    width: 43px;
     height: 95px;
 }
 /*media*/
