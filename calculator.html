@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>no title lol</title>
+    <style>
+        :root{
+            --escuro--: #0F1923;
+            --claro--: #1A242D;
+            --redesc--: #A81E35;
+            --redcla--: #F12C4C;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: var(--escuro--);
+        }
+        .main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 165px;
+            border-radius: 20px;
+            display: table;
+            background-color: var(--claro--);
+            box-shadow: -1px -1px 3px black;
+        }
+        .child{
+            display: table-cell;
+            position: relative;
+            top: 13px;
+            text-align: center;
+        }
+        select{
+            background-color: var(--escuro--);
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            border: none;
+            padding: 13px;
+            width: 60%;
+        }
+        select:focus{
+            outline: none;
+        }
+        button{
+            background-color: var(--redcla--);
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            border-radius: 5px;
+            padding: 13px;
+            width: 30%;
+            transition: .5s;
+        }
+        button:hover{
+            background-color: var(--redesc--);
+        }
+        #a{
+            width: 90%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 20px;
+            text-align: left;
+            color: white;
+            font-size: 15px;
+            font-weight: 300;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .help{
+            border: 1px solid rgba(255, 255, 255, 0.301);
+            height: 30px;
+            width: 30px;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 24px;
+            right: 13px;
+        }
+        img{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+    <body>
+        <div class="main">
+            <div class="child">
+                <select id="names">
+                        <option value="0">SELECIONE SEU NOME</option>
+                        <option value="1">ÁBNER</option>
+                        <option value="2">ALEF</option>
+                        <option value="3">ANA CAROLINA</option>
+                        <option value="4">ANA CLARA</option>
+                        <option value="5">ANDRESSA</option>
+                        <option value="6">ARTHUR</option>
+                        <option value="7">BRUNO</option>
+                        <option value="8">CHRISTIAN</option>
+                        <option value="9">DANIEL</option>
+                        <option value="10">DANILO</option>
+                        <option value="11">EDUARDA</option>
+                        <option value="12">EDUARDO SOARES</option>
+                        <option value="13">EDUARDO SOL</option>
+                        <option value="14">FERNANDA</option>
+                        <option value="15">GABRIEL</option>
+                        <option value="16">GIOVANNA</option>
+                        <option value="17">GUSTAVO</option>
+                        <option value="18">ISABELLA</option>
+                        <option value="19">IZABELLY</option>
+                        <option value="20">JEANNE</option>
+                        <option value="21">JEMILLY</option>
+                        <option value="22">JOÃO</option>
+                        <option value="23">KAUAN</option>
+                        <option value="24">LEONARDO</option>
+                        <option value="25">LUCAS ALMEIDA</option>
+                        <option value="26">LUCAS NASCIMENTO</option>
+                        <option value="27">LUCAS NOLASCO</option>
+                        <option value="28">LUIZA</option>
+                        <option value="29">MARIA VITÓRIA</option>
+                        <option value="30">MATHEUS</option>
+                        <option value="31">NATÃ</option>
+                        <option value="32">PABLO</option>
+                        <option value="33">PEDRO</option>
+                        <option value="34">RAFAEL</option>
+                        <option value="35">RICARDO</option>
+                        <option value="36">SHINEIDER</option>
+                        <option value="37">VITOR</option>
+                </select>
+                <button onclick="lolo()">Calcular</button>
+                <div id="a">Voce irá pesquisar sobre os elementos: <br>
+                    • niquel;<br>
+                    • cobre;<br>
+                    • zinco.
+                </div>
+                <div class="help" onclick="lol()"><img src="img/info.svg" alt=""></div>
+            </div>
+        </div>
+        <script defer>
+            function lol(){
+                document.location.href="exemplo.png"
+            }
+        function lolo(){
+            var n = Number(document.querySelector('#names').value)
+            if(n>0){
+                var chn1 = 3*n-2
+                var chn2 = chn1+1
+                var chn3 = chn1+2
+                document.getElementById('a').innerHTML=`Voce irá pesquisar sobre os elementos: <br> • ${chn1.toString().replace("100","fermio").replace("101","mendelevio").replace("102","nobelio").replace("103","laurencio").replace("104","rutherfordio").replace("105","dubnio").replace("106","seaborgio").replace("107","bohrio").replace("108","hassio").replace("109","meitnerio").replace("110","darmstadtio").replace("111","roentgenio").replace("112","copernicio").replace("113","nihonio").replace("114","flerovio").replace("115","moscovio").replace("116","livermorio").replace("117","tennessino").replace("118","oganesson").replace("10","neon").replace("11","sodio").replace("12","magnesio").replace("13","aluminio").replace("14","silicio").replace("15","fosforo").replace("16","enxofre").replace("17","cloro").replace("18","argonio").replace("19","potassio").replace("20","calcio").replace("21","escandio").replace("22","titanio").replace("23","vanadio").replace("24","cromo").replace("25","manganes").replace("26","ferro").replace("27","cobalto").replace("28","niquel").replace("29","cobre").replace("30","zinco").replace("31","galio").replace("32","germanio").replace("33","arsenio").replace("34","selenio").replace("35","bromo").replace("36","criptonio").replace("37","rubidio").replace("38","estroncio").replace("39","itrio").replace("40","zirconio").replace("41","niobio").replace("42","molibdenio").replace("43","tecnecio").replace("44","rutenio").replace("45","rodio").replace("46","paladio").replace("47","prata").replace("48","cadmio").replace("49","indio").replace("50","estanho").replace("51","antimonio").replace("52","telurio").replace("53","iodo").replace("54","xenonio").replace("55","cesio").replace("56","bario").replace("57","lantanio").replace("58","cerio").replace("59","praseodimio").replace("60","neodimio").replace("61","prometio").replace("62","samario").replace("63","europio").replace("64","gadolinio").replace("65","terbio").replace("66","disprosio").replace("67","holmio").replace("68","erbio").replace("69","tulio").replace("70","iterbio").replace("71","lutecio").replace("72","hafnio").replace("73","tantalo").replace("74","tungstenio").replace("75","renio").replace("76","osmio").replace("77","iridio").replace("78","platina").replace("79","ouro").replace("80","mercurio").replace("81","talio").replace("82","chumbo").replace("83","bismuto").replace("84","polonio").replace("85","astato").replace("86","radonio").replace("87","francio").replace("88","radio").replace("89","actinio").replace("90","torio").replace("91","protactinio").replace("92","uranio").replace("93","neptunio").replace("94","plutonio").replace("95","americio").replace("96","curio").replace("97","berquelio").replace("98","californio").replace("99","einstenio").replace("1","hidrogenio").replace("2","helio").replace("3","litio").replace("4","berilio").replace("5","boro").replace("6","carbono").replace("7","nitrogenio").replace("8","oxigenio").replace("9","fluor")};<br> • ${chn2.toString().replace("100","fermio").replace("101","mendelevio").replace("102","nobelio").replace("103","laurencio").replace("104","rutherfordio").replace("105","dubnio").replace("106","seaborgio").replace("107","bohrio").replace("108","hassio").replace("109","meitnerio").replace("110","darmstadtio").replace("111","roentgenio").replace("112","copernicio").replace("113","nihonio").replace("114","flerovio").replace("115","moscovio").replace("116","livermorio").replace("117","tennessino").replace("118","oganesson").replace("10","neon").replace("11","sodio").replace("12","magnesio").replace("13","aluminio").replace("14","silicio").replace("15","fosforo").replace("16","enxofre").replace("17","cloro").replace("18","argonio").replace("19","potassio").replace("20","calcio").replace("21","escandio").replace("22","titanio").replace("23","vanadio").replace("24","cromo").replace("25","manganes").replace("26","ferro").replace("27","cobalto").replace("28","niquel").replace("29","cobre").replace("30","zinco").replace("31","galio").replace("32","germanio").replace("33","arsenio").replace("34","selenio").replace("35","bromo").replace("36","criptonio").replace("37","rubidio").replace("38","estroncio").replace("39","itrio").replace("40","zirconio").replace("41","niobio").replace("42","molibdenio").replace("43","tecnecio").replace("44","rutenio").replace("45","rodio").replace("46","paladio").replace("47","prata").replace("48","cadmio").replace("49","indio").replace("50","estanho").replace("51","antimonio").replace("52","telurio").replace("53","iodo").replace("54","xenonio").replace("55","cesio").replace("56","bario").replace("57","lantanio").replace("58","cerio").replace("59","praseodimio").replace("60","neodimio").replace("61","prometio").replace("62","samario").replace("63","europio").replace("64","gadolinio").replace("65","terbio").replace("66","disprosio").replace("67","holmio").replace("68","erbio").replace("69","tulio").replace("70","iterbio").replace("71","lutecio").replace("72","hafnio").replace("73","tantalo").replace("74","tungstenio").replace("75","renio").replace("76","osmio").replace("77","iridio").replace("78","platina").replace("79","ouro").replace("80","mercurio").replace("81","talio").replace("82","chumbo").replace("83","bismuto").replace("84","polonio").replace("85","astato").replace("86","radonio").replace("87","francio").replace("88","radio").replace("89","actinio").replace("90","torio").replace("91","protactinio").replace("92","uranio").replace("93","neptunio").replace("94","plutonio").replace("95","americio").replace("96","curio").replace("97","berquelio").replace("98","californio").replace("99","einstenio").replace("1","hidrogenio").replace("2","helio").replace("3","litio").replace("4","berilio").replace("5","boro").replace("6","carbono").replace("7","nitrogenio").replace("8","oxigenio").replace("9","fluor")};<br> • ${chn3.toString().replace("100","fermio").replace("101","mendelevio").replace("102","nobelio").replace("103","laurencio").replace("104","rutherfordio").replace("105","dubnio").replace("106","seaborgio").replace("107","bohrio").replace("108","hassio").replace("109","meitnerio").replace("110","darmstadtio").replace("111","roentgenio").replace("112","copernicio").replace("113","nihonio").replace("114","flerovio").replace("115","moscovio").replace("116","livermorio").replace("117","tennessino").replace("118","oganesson").replace("10","neon").replace("11","sodio").replace("12","magnesio").replace("13","aluminio").replace("14","silicio").replace("15","fosforo").replace("16","enxofre").replace("17","cloro").replace("18","argonio").replace("19","potassio").replace("20","calcio").replace("21","escandio").replace("22","titanio").replace("23","vanadio").replace("24","cromo").replace("25","manganes").replace("26","ferro").replace("27","cobalto").replace("28","niquel").replace("29","cobre").replace("30","zinco").replace("31","galio").replace("32","germanio").replace("33","arsenio").replace("34","selenio").replace("35","bromo").replace("36","criptonio").replace("37","rubidio").replace("38","estroncio").replace("39","itrio").replace("40","zirconio").replace("41","niobio").replace("42","molibdenio").replace("43","tecnecio").replace("44","rutenio").replace("45","rodio").replace("46","paladio").replace("47","prata").replace("48","cadmio").replace("49","indio").replace("50","estanho").replace("51","antimonio").replace("52","telurio").replace("53","iodo").replace("54","xenonio").replace("55","cesio").replace("56","bario").replace("57","lantanio").replace("58","cerio").replace("59","praseodimio").replace("60","neodimio").replace("61","prometio").replace("62","samario").replace("63","europio").replace("64","gadolinio").replace("65","terbio").replace("66","disprosio").replace("67","holmio").replace("68","erbio").replace("69","tulio").replace("70","iterbio").replace("71","lutecio").replace("72","hafnio").replace("73","tantalo").replace("74","tungstenio").replace("75","renio").replace("76","osmio").replace("77","iridio").replace("78","platina").replace("79","ouro").replace("80","mercurio").replace("81","talio").replace("82","chumbo").replace("83","bismuto").replace("84","polonio").replace("85","astato").replace("86","radonio").replace("87","francio").replace("88","radio").replace("89","actinio").replace("90","torio").replace("91","protactinio").replace("92","uranio").replace("93","neptunio").replace("94","plutonio").replace("95","americio").replace("96","curio").replace("97","berquelio").replace("98","californio").replace("99","einstenio").replace("1","hidrogenio").replace("2","helio").replace("3","litio").replace("4","berilio").replace("5","boro").replace("6","carbono").replace("7","nitrogenio").replace("8","oxigenio").replace("9","fluor")}.`
+            } else{
+                alert('Selecione seu nome!')
+            }
+        }
+        </script>
+    </body>
+</html>
