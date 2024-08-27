@@ -3,30 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Signika+Negative:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-@keyframes rgb-bg { /*title*/
-    0% {background-color: #FF0100}
-    12.5% {background-color: #FE6A00}
-    25% {background-color: #FFFD00;}
-    37.5% {background-color: #15FF00;}
-    50% {background-color: #00FFF9;}
-    62.5% {background-color: #020DFF;}
-    75% {background-color: #FF00C8;}
-    87.5% {background-color: #FF0F8C;}
-    100% {background-color: #FF0100;}
-}
-
-@keyframes rgb-border { /*none*/
-    0% {border: 4px solid #FF0100}
-    12.5% {border: 4px solid #FE6A00}
-    25% {border: 4px solid #FFFD00;}
-    37.5% {border: 4px solid #15FF00;}
-    50% {border: 4px solid #00FFF9;}
-    62.5% {border: 4px solid #020DFF;}
-    75% {border: 4px solid #FF00C8;}
-    87.5% {border: 4px solid #FF0F8C;}
-    100% {border: 4px solid #FF0100;}
-}
-
 /*general*/
 *{
     margin: 0;
@@ -38,10 +14,13 @@ body{
 main{
     transition: .2s;
 }
+.euqueromaringbottomcommenosde5porcentoeeuvouter{
+    color: #00000000;
+}
 /*3d*/
 model-viewer{
-    width: 500px;
-    height: 500px;
+    width: 285px;
+    height: 250px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -49,9 +28,9 @@ model-viewer{
 }
 .m3d{
     position: relative;
-    width: 260px;
-    height: 260px;
-    background-color: rgba(31, 31, 31, 0);
+    width: 285px;
+    height: 250px;
+    background-color: rgba(31, 31, 31, 0.301);
     border-radius: 30px;
     left: 50%;
     transform: translateX(-50%);
@@ -60,41 +39,97 @@ p.model{
     margin-bottom: 3px;
     font-size: 10px;
 }
-/*periodic table*/
-.pertab{
-    transform: scale(0.95);
-    margin-top: 20px;
-    min-width: 1600px;
-}
 /*title*/
 div.title{
-    animation: rgb-bg 7s infinite;
     font-family: "Madimi One", sans-serif;
     font-size: 32px;
     font-weight: 600;
     border-radius: 7px;
     text-align: center;
-    display: block;
     width: 430px;
     padding: 10px;
-    margin-left: 27%;
-    margin-bottom: -150px;
+    margin-left: 450px;
+    margin-top: 20px;
     border: 5px #000 solid;
+    background-color: #053556;
     box-shadow: 
     -2px -2px 5px white,
     2px 2px 5px white,
     2px -2px 5px white,
     -2px 2px 5px white;
+    position: absolute;
 }
-/*tabel*/
 .container{
-    display: table-cell;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(18, 77px);
+    gap: 6px;
+    position: relative;
+    top: 10px;
+    padding-left: 28px;
+ }
+.container-2{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(18, 77px);
+    gap: 6px;
+    position: relative;
+    top: 22px;
+    left: 28px;
+}
+/*in tabel elements*/
+.el{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    border: #ffffff41 3px solid;
+    border-radius: 5px;
+    transition: .1s;
+    cursor: pointer;
+}
+.el:hover{
+    transform: scale(1.1);
+}
+.nel:hover{ /*'57 a 71' e '89 a 103'*/
+    transform: none !important;
+}
+/*container line*/
+.container-line{
+    position: absolute;
+    top: 595px;
+    left: 231px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    width: 36px;
+    height: 81px;
+}
+
+/*label*/
+.caption{
+    border: 5px solid #5757578e;
+    border-radius: 7px;
+    position: relative;
+    width: 800px;
+    margin-left: 370px;
+    top: 42px;
     text-align: center;
 }
-.container-2{
+.sq{
+    width: 20px;
+    height: 20px;
     display: inline-block;
-    text-align: center;
-    margin-top: 10px;
+    vertical-align: top;
+    border-radius: 4px;
+}
+.captext{
+    font-family: "Roboto Mono", monospace;
+    display: inline-block;
+    text-align: left;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.capmat{
+    padding: 10px;
+    display: inline-block;
 }
 /*research*/
 .inf-title{
@@ -124,7 +159,7 @@ div.title{
     text-align: justify;
     overflow-y: scroll;
     overflow-x: hidden;
-    z-index: 3;
+    z-index: 4;
 }
 button.xzim{
     z-index: 4;
@@ -168,37 +203,6 @@ button.xzim{
     top: 0;
     left: 0;
 }
-/*label*/
-.caption{
-    border: 5px solid #5757578e;
-    border-radius: 7px;
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-    margin-bottom: 30px;
-    text-align: center;
-    max-width: 1000px;
-}
-.sq{
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: top;
-    border-radius: 4px;
-}
-.captext{
-    font-family: "Roboto Mono", monospace;
-    display: inline-block;
-    text-align: left;
-    text-transform: uppercase;
-    color: whitesmoke;
-}
-.capmat{
-    padding: 10px;
-    display: inline-block;
-}
 /*elements color*/
 .nm{
     background-color: #A1D344;
@@ -237,37 +241,6 @@ button.xzim{
 .a{
 background-color: #DCADD6;
 }
-/*in tabel elements*/
-.el{
-    display: inline-block;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 71px;
-    height: 71px;
-    vertical-align: middle;
-    border: #ffffff44 4px solid;
-    border-radius: 7px;
-    margin-left: 3px;
-    margin-bottom: 7px;
-    transition: .1s;
-    cursor: pointer;
-}
-.el2{
-    display: inline-block;
-    text-align: center;
-    width: 71px;
-    height: 71px;
-    vertical-align: middle;
-    border: #ffffff44 4px solid;
-    border-radius: 7px;
-    margin-left: 3px;
-    margin-bottom: 7px;
-    transition: .1s;
-    cursor: pointer;
-}
-.el:hover{
-    transform: scale(1.1);
-}
 .n{
     font-family: "Signika Negative", sans-serif;
     font-size: 13px;
@@ -292,24 +265,4 @@ background-color: #DCADD6;
 .subn{
     font-family: "Signika Negative", sans-serif;
     font-size: 12px;
-}
-/*container line*/
-.container-line{
-    position: absolute;
-    top: 562px;
-    left: 213px;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    width: 43px;
-    height: 95px;
-}
-/*media*/
-@media screen and (max-width: 1545px) {
-    body{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .pertab{
-        margin-left: -50px;
-    }
 }

@@ -13,11 +13,11 @@ function dontopen(element){
         var info = document.querySelector(`#${id}t`)
         info.style.display="block"
         info.style.transform="translate(-50%, -50%) scale(1)"
-        document.querySelector(`#${id}t #mv`).innerHTML=`<div class="m3d"><model-viewer src="vaquinha ;3/${id}.glb" camera-controls autoplay ar ar-modes="webxr scene-viewer" shadow-intensity="0"></model-viewer></div>`//mv == model viwer
+        document.querySelector(`#${id}t #mv`).innerHTML=`<div class="m3d"><model-viewer src="vaquinha ;3/${id}.glb" camera-controls autoplay ar ar-modes="webxr scene-viewer" shadow-intensity="0" camera-orbit="45deg 70deg 0m"></model-viewer></div>`//mv == model viwer
         tab.style.filter="blur(3px)"
         tab.style.opacity="0.8"
         tab.style.pointerEvents="none"
-        body.style.overflow="hidden"
+        body.style.overflowY="hidden"
     } else{
         alert('Infelizmente o coleguinha responsavel por tal pesquisa ainda não contribuiu para o trabalho da turma \u{1F614}')
     }
