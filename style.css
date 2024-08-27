@@ -178,6 +178,9 @@ button.xzim{
     2px -2px 3px white,
     -2px 2px 3px white;
 }
+button.xzim::selection{
+    background-color: rgba(0, 0, 0, 0);
+}
 .aut{
     background-color: rgba(0, 0, 0, 0.295);
     margin-top: 4px;
@@ -210,6 +213,9 @@ button.xzim{
 .nothing{
     background-color: #00000000;
     border-color: #00000000 !important;
+}
+.nothing::selection{
+    background-color: rgba(0, 0, 0, 0);
 }
 .gn{
     background-color: #3D9EE3;
