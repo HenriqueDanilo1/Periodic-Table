@@ -1,16 +1,16 @@
 //tab = p. table
-var tab = document.getElementById('tab')
-var body = document.getElementsByTagName("body")[0]
+let tab = document.getElementById('tab')
+let body = document.getElementsByTagName("body")[0]
 let missclick = 1
 //open/close
 localStorage.removeItem("id")
 function dontopen(element){
-    var id = element.id
+    let id = element.id
     if(document.getElementById(`${id}t`) != null){
         document.getElementById('mobilemimimi').setAttribute("class", "close-this-shit")
         document.getElementById('mobilemimimi').setAttribute("onclick", "dontclose()")
         localStorage.setItem("id", id)
-        var info = document.querySelector(`#${id}t`)
+        let info = document.querySelector(`#${id}t`)
         info.style.display="block"
         info.style.transform="translate(-50%, -50%) scale(1)"
         document.querySelector(`#${id}t #mv`).innerHTML=`<div class="m3d"><model-viewer src="vaquinha ;3/${id}.glb" camera-controls autoplay ar ar-modes="webxr scene-viewer" shadow-intensity="0" camera-orbit="45deg 70deg 0m"></model-viewer></div>`//mv == model viwer

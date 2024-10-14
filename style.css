@@ -47,11 +47,11 @@ div.title{
     border-radius: 7px;
     text-align: center;
     width: 430px;
-    padding: 10px;
-    margin-left: 450px;
-    margin-top: 20px;
+    padding: 23px;
+    margin-left: 390px;
+    margin-top: 65px;
     border: 5px #000 solid;
-    background-color: #053556;
+    background-color: #066db3;
     box-shadow: 
     -2px -2px 5px white,
     2px 2px 5px white,
@@ -130,6 +130,12 @@ div.title{
 .capmat{
     padding: 10px;
     display: inline-block;
+}
+li{
+    padding-left: 15px;
+}
+ol{
+    list-style-type: none;
 }
 /*research*/
 .inf-title{
