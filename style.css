@@ -38,6 +38,7 @@ model-viewer{
 p.model{
     margin-bottom: 3px;
     font-size: 10px;
+    padding-top: 6px;
 }
 /*title*/
 div.title{
