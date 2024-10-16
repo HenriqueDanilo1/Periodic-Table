@@ -1,6 +1,6 @@
 //tab = p. table
-let tab = document.getElementById('tab')
-let body = document.getElementsByTagName("body")[0]
+const tab = document.getElementById('tab')
+const body = document.getElementsByTagName("body")[0]
 let missclick = 1
 //open/close
 localStorage.removeItem("id")
@@ -17,7 +17,9 @@ function dontopen(element){
     tab.style.opacity="0.8"
     tab.style.pointerEvents="none"
     body.style.overflowY="hidden"
-    tab.style.paddingRight="15px"
+    if(tab.scrollHeight > window.innerHeight) { // NAO EDITAR EM MOMENTO ALGUM
+        tab.style.paddingRight="16px"
+    }
 }
 function dontclose(){
     let id = localStorage.getItem('id')
