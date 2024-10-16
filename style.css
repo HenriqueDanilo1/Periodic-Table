@@ -10,12 +10,19 @@
 }
 body{
     background-color: rgb(31, 31, 31);
+    overscroll-behavior-y: none;
 }
 main{
     transition: .2s;
 }
 .euqueromaringbottomcommenosde5porcentoeeuvouter{
     color: #00000000;
+}
+/* table */
+#tab{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 /*3d*/
 model-viewer{
@@ -49,7 +56,7 @@ div.title{
     text-align: center;
     width: 430px;
     padding: 23px;
-    margin-left: 390px;
+    margin-left: 335px;
     margin-top: 65px;
     border: 5px #000 solid;
     background-color: #066db3;
@@ -67,7 +74,7 @@ div.title{
     gap: 6px;
     position: relative;
     top: 10px;
-    padding-left: 28px;
+    /* padding-left: 28px; */
  }
 .container-2{
     text-align: center;
@@ -76,7 +83,6 @@ div.title{
     gap: 6px;
     position: relative;
     top: 22px;
-    left: 28px;
 }
 /*in tabel elements*/
 .el{
@@ -97,7 +103,7 @@ div.title{
 .container-line{
     position: absolute;
     top: 595px;
-    left: 231px;
+    left: 203px;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     width: 36px;
@@ -110,7 +116,7 @@ div.title{
     border-radius: 7px;
     position: relative;
     width: 800px;
-    margin-left: 370px;
+    margin-left: 345px;
     top: 42px;
     text-align: center;
 }
@@ -207,7 +213,7 @@ button.xzim::selection{
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     display: block;
-    height: 1300vh;
+    height: 100vh;
     width: 100%;
     z-index: 2;
     top: 0;
@@ -279,3 +285,20 @@ background-color: #DCADD6;
     font-family: "Signika Negative", sans-serif;
     font-size: 12px;
 }
+
+@media only screen and (max-width: 1500px) {
+    #tab{
+        position: relative;
+        left: 0;
+        transform: translateX(0%);
+    }
+    .container{
+        padding-left: 5px;
+     }
+     .container-2{
+        left: 5px;
+     }
+     .container-line{
+        left: 208px;
+    }
+  }
