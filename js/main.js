@@ -35,3 +35,5 @@ function dontclose(){
         localStorage.removeItem("id")
     }, 199)
 }
+
+// melhore
